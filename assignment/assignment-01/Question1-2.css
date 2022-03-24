@@ -1,0 +1,39 @@
+/* 메인 제목 border의 bottom에 속성을 주어 다른 콘텐츠와 구분선을 설정하였습니다 */
+h1 {
+    width: 500px;
+    border-bottom: dotted 10px black;
+}
+
+/* h2 콘텐츠에 색상을 주어 다른 콘텐츠와 구분될 수 있도록 하였습니다 */
+h2 {
+    color:blue;
+}
+
+/* Euije Lee의 설명 콘텐츠 문장의 margin을 없애어 읽는이로 하여금 피로감을 덜었습니다. */
+p {
+    margin: 0 0 0 0;
+}
+
+/* h3 콘텐츠의 font-style을 italic으로 바꾸어 다른 콘텐츠와 구분될 수 있도록 하였습니다 */
+/* font-style에는 normal, italic, oblique등이 있습니다. */
+h3{
+    /* italic */
+    font-style: italic;
+}
+
+/* 
+    padding -> 정보가 충분히 공간을 차지할 수 있게함
+    border -> Contact 정보를 색상으로 구분
+    background-color -> 배경색
+*/
+ul {
+    width: 400px;
+    padding: 20px 5px 20px 20px;
+    border: 5px blue solid;
+    background-color: lightblue;
+}
+
+/* email의 주소에 hover시 pink으로 색상이 변화하여 사용자가 mailto 기능이 있음을 알 수 있게 하였습니다. */
+#email:hover {
+    color: pink;
+}

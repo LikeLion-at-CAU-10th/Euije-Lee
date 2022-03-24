@@ -1,0 +1,38 @@
+#main-content {
+    width: 800px;
+    height: 200px;
+    
+
+    /* HTML 콘텐츠(element)의 구조는 다음과 같습니다 */
+    /* 1. padding, 2. border, 3. margin */
+
+    /* 'padding'은 content ~ border 사이의 간격을 의미합니다 */
+    /* 
+        CSS 사용 방법은 다음과 같습니다 
+        'padding: 위쪽 오른쪽 아래쪽 왼쪽'
+        각 방향으로 간격을 어느만큼 줄 것인지 지정합니다.
+    */
+    padding: 100px 50px 100px 50px;
+
+    /* 'border'는 글자 그대로 padding과 margin의 경계선을 의미합니다 *
+    /* 
+        'border: 너비 모양 색깔'
+        너비, 모양, 색깔의 순서는 상관 없으며
+        1가지 이상 정의해주어야 합니다.
+        * 색깔을 정의하는 방법 3가지: hex code, rgbe, color-name 
+    */
+    border: #b60e0e 30px solid ;
+
+    /* 'margin'은 border ~ 다른 콘텐츠 사이의 간격을 의미합니다 */
+    /* 
+        'margin: 위쪽 오른쪽 아래쪽 왼쪽'
+        각 방향으로 간격을 어느만큼 줄 것인지 지정합니다.
+    */
+    margin: 80px 40px 80px 40px;
+    
+}
+
+h1 {
+    font-size: 150px;
+    text-align: center;
+}
