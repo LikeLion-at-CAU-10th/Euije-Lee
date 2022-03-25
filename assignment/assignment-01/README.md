@@ -11,7 +11,7 @@
 <br />
 <br />
 
-<h1>Questions 1.3</h1>
+<h1>Questions 3</h1>
 <table>
   <tr>
     <th>
@@ -24,4 +24,8 @@
   
 </table>
 
+<br />
+<br />
+
+<h1>Questions 4</h1>
 
