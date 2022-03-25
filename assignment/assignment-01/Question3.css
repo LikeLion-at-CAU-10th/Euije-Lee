@@ -1,0 +1,57 @@
+/* 제목 */
+h1 {
+    margin: 0 0 0 450px;
+    color: #5dbebb;
+    font-size: 100px;
+}
+
+h3 {
+    margin: 0 0 50px 600px;
+}
+
+/* 메인 콘텐츠 */
+img {
+    padding: 0 100px 15px 100px;
+    width: 500px;
+    height: 500px;
+}
+
+#brand {
+    font-size: 40px;
+}
+
+#menu {
+    font-style: italic;
+}
+
+/* 상세 콘텐츠 */
+#pizza {
+    padding: 0 100px 15px 330px;
+}
+
+#information {
+    padding: 0 100px 15px 330px;
+}
+
+/* text-align: center/left/right를 이용하면 텍스트의 정렬 위치를 지정할 수 있다. */
+/* https://www.w3schools.com/css/css_table_style.asp */
+p{
+    padding: 0 0 0 70px;
+    text-align: left;
+}
+
+/* html 자동완성에 b 태그가 있길래 사용하여 버튼을 만들었습니다... */
+b {
+    padding: 10px 30px 10px 30px;
+    border: 1px blue solid;
+    border-radius: 5px;
+
+    color: white;
+    background: blue;
+}
+
+/* 홈페이지 정보 */
+footer {
+    margin: 100px 0 0 10px;
+}
+

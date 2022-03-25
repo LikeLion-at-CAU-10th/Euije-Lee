@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> 배달의 인종, 세상에는 맛있는 다양성이 있다. </title>
+    <link rel="stylesheet" href="Question3.css">
+</head>
+
+<body>
+    <section>
+        <h1> 배달의 인종</h1>
+        <h3> 어서오세요. 맛있게 먹겠습니까?</h3>
+    </section>
+
+    <section>
+
+        <!-- 이미지를 좌우로 위치하기 위해 table태그를 사용했습니다. (제가 한글작업할 때 방식이라서요,,,) -->
+        <!-- 
+            각 행에는 (tr) 각각 사진, 브랜드, 메뉴를 배열하고 id를 지정하여 일관성을 부여했습니다
+            사진1, 사진2
+            브랜드1, 브랜드2
+            메뉴1, 메뉴2
+        -->
+        <!-- 
+            tr: 행(row), th: 열(col)
+            tr태그 3개에 각각 2개의 th태그가 사용되었으므로
+            2x3 table이 생성 됩니다.
+        -->
+        <table>
+            <tr id="image">
+                <th>
+                    <!-- 상품의 상세 페이지의 링크는 피자와 짬뽕 중 피자페이지로 설정하였습니다. -->
+                    <a href="Question3_pizza.html">
+                        <img src="https://user-images.githubusercontent.com/12531340/159958137-e9c7120c-d787-4d2a-b008-1b1cbe4ecec6.jpeg"/>
+                    </a>
+                </th>
+                <th>
+                    <a>
+                        <img src="https://user-images.githubusercontent.com/12531340/159958259-b9c6c09b-9eb7-4e48-aad2-0e284b40fd15.jpeg">
+                    </a>
+                </th>
+            </tr>
+            <tr id="brand">
+                <th>
+                    피자마루
+                </th>
+                <th>
+                    청풍루
+                </th>
+            </tr>
+            <tr id="menu">
+                <th>
+                    시카고 피자
+                </th>
+                <th>
+                    고기짬뽕
+                </th>
+            </tr>
+        </table>
+
+    </section>
+
+    <footer>
+        Copyright &copy; by 배달의 인종. All Foods Reserved.
+    </footer>
+</body>
+
+</html>
