@@ -7,3 +7,21 @@
 
 <h1>Question 1.2</h1>
 <img src="https://user-images.githubusercontent.com/12531340/159951682-625552cd-17cb-4072-abeb-67238d6a725e.png">
+
+<br />
+<br />
+
+<h1>Questions 1.3</h1>
+<table>
+  <tr>
+    <th>
+      <img src="https://user-images.githubusercontent.com/12531340/160066164-38cc3698-7c68-4db0-a882-c3a523b35a22.png">
+    </th>  
+    <th>
+      <img src="https://user-images.githubusercontent.com/12531340/160066188-ca4b8aba-8ed1-4d62-91c8-899a42e41f1f.png">
+    </th>
+  <tr>
+  
+</table>
+
+
