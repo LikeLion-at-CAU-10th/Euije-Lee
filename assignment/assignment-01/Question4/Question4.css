@@ -10,6 +10,7 @@ div {
     background-color: yellowgreen;
 }
 
+/* <h(n)> 태그는 브라우저 설정 상 '고유의' 값 존재. */
 /* 카드 제목 */
 h3 {
     width: 150px;
