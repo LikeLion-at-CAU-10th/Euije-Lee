@@ -165,8 +165,8 @@ body {
     color:white;
     text-align: center;
 
-    /* 왜 적용이 안되는지 궁금합니다 */
-    border-radius: 5px solid blue;
+    border: 1px solid blue;
+    border-radius: 5px;
 
     flex-basis: 20%;
 }
