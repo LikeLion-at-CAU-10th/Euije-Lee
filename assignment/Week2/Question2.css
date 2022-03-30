@@ -1,0 +1,157 @@
+.main-container {
+    width: 1250px;
+    height: 500px;
+
+    padding: 10px 10px 10px 10px;
+    border: 3px dotted black;
+
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    margin: 10px 0 10px 0; 
+}
+
+
+.container1 { /* block 1~2 */
+    background-color: beige;
+    
+    flex-basis: 10%;
+
+    display: flex;
+    flex-direction: row;
+}
+.container2 { /* block 3~5 */
+    background-color:mediumpurple;
+    
+    flex-basis: 10%;    
+    
+    display: flex;
+    flex-direction: row;
+    /* block 3, 4, 5는 flex-direction만 주면 */
+    /* flex-basis를 안주어도 각각 width의 비율이 1:1:1 자동 설정. */
+    /* *&주의 사항&* -> Block 3,4,5 CSS로 */
+}
+.container3 { /* block 6~7 */
+    background-color: greenyellow;
+
+    flex-basis: 20%;
+
+    display: flex;
+    flex-direction: row;
+}
+.container4 { /* block 8~9 */
+    background-color: lightpink;
+
+    flex-basis: 20%;
+
+    display: flex;
+    flex-direction: row;
+}
+.container5 { /* block 10~13 */
+    background-color:orange;
+
+    flex-basis: 40%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.block1{
+    background-color: pink;
+    flex-basis: 20%;
+}
+.block2{
+    background-color: plum;
+    flex-basis: 80%;
+}
+
+/* block3 ~ 5 */
+/* 
+    부모(Container)가 flex하고 
+    자식(items)들의 flex-basis를 지정하지 않고
+    Default를 사용하고 싶을 때,
+    (이 파일에서는 부모가 row시 block 3 ~ 5의 flex-basis를 1:1:1로 설정하고 싶을 때)
+*/
+/* 
+    부모가 Row하면 자식의 width를 지정해줘야 하고
+    부모가 Column하면 자식의 height를 지정해주어야
+    flex-basis의 Default값이 적용이 된다.
+    (여기서는 width미적용시 가로 픽셀값이 0이되어 보이지 않는다.)
+*/
+.block3{
+    background-color: darkred;
+    /* height: 100%; */
+    width: 100%;
+}
+.block4{
+    background-color: darkgreen;
+    /* height: 100%; */
+    width: 100%;
+}
+.block5{
+    background-color: darkblue;
+    /* height: 100%; */
+    width: 100%;
+}
+
+.block6{
+    background-color: darkgreen;
+    flex-basis: 40%;
+}
+.block7{
+    background-color: darkolivegreen;
+    flex-basis: 60%;
+}
+
+.block8{
+    background-color:deeppink;
+    flex-basis: 60%;
+}
+.block9{
+    background-color: pink;
+    flex-basis: 40%;
+}
+
+.block-container1{
+    flex-basis: 40%;
+
+    display: flex;
+    /* default-direction : row */
+}
+.block-container2{
+    flex-basis: 60%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.block10{
+    background-color: coral;
+    width: 100%;
+}
+
+.block-container3{
+    flex-basis: 50%;
+
+    display: flex;
+}
+.block-container4{
+    flex-basis: 50%;
+
+    display: flex;
+    /* default-direction : row */
+}
+
+.block11{
+    background-color:tomato;
+    width: 100%;
+}
+.block12{
+    background-color: salmon;
+    flex-basis: 50%;
+}
+.block13{
+    background-color: orangered;
+    flex-basis: 50%;
+}
