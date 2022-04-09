@@ -1,9 +1,14 @@
+/* body 태그를 flex 변경 */
+/* main layout 가운데 정렬 */
 body {
     display: flex;
     justify-content: center;
 }
 
-/*  */
+/* Main으로 사용할 layout */
+/* size : 1280x800px */
+/* main layout 구성 : navbar, contents */
+/* navbar, contents를 column 방향으로 정렬 */
 .layout-container {
     background-color: beige;
     width: 1280px;
@@ -14,7 +19,12 @@ body {
     align-items: center;
 }
 
-/*  */
+/* 역할 navigation bar으로 서비스의 여러 기능으로 간편하게 넘어가도록 합니다 */
+/* navbar 구성 : logo, search, icon */
+/* logo, search, icon을 row 방향으로 정렬 */
+/* width: 70% -> 1280px의 70%만큼 가로 폭을 차지한다 */
+/* flex-basis -> 부모(main layout)의 height(column 방향, 800px)을
+navbar: 7%, contents: 75% */
 .navbar-container {
     background-color: #1E58AF;
     width: 70%;
@@ -26,6 +36,12 @@ body {
 
     flex-basis: 7%;
 }
+/* flex-basis -> 부모(navbar layout)의 width(row 방향)을
+logo: 30%, search: 30%, icon: 30% */
+
+/* flex-direction: default(row)
+logo의 자식 태그가 1개 밖에 없어서 default값으로 남기었습니다 */
+/* 위치: 좌-logo, 중-search, 우-icon */
 .logo-container {
     display: flex;
     
@@ -49,6 +65,7 @@ body {
 }
 .icon-container {
     display: flex;
+    /* 위에서 아래 순서의 img 태그가 icon layout 우측으로부터 배치됩니다. */
     flex-direction: row-reverse;
     justify-content: space-evenly;
     /* flex-wrap:wrap; */
@@ -56,23 +73,37 @@ body {
 
     align-items: center;
 }
+/* logo, icon에 있는 img를
+'icon' class로 지정 하여 크기를 조정 */
 .icon{
     width:25px;
     height:25px;
 }
 
-/*  */
+/* contents layout 구성 : feed, account */
+/* feed, account row 방향으로 정렬 */
 .contents-container {
     background-color: #f7cf46;
     width: 70%;
 
     display: flex;
     flex-direction: row;
+    
+    /* https://studiomeal.com/archives/197 */
+    /* 아이템들의 사이와 양 끝에 균일한 간격을 만들어 줍니다.
+    주의! IE와 엣지(Edge)에서는 지원되지 않습니다👎
+    이 웹사이트의 메뉴 부분은 브라우저 폭이 1024px 이상일 때 space-evenly가 적용되도록 했는데요, IE와 엣지에서만 space-around로 적용이 되도록 처리해 두었어요. */
+    
+    /* 이번 과제 하면서 justify-content의 속성을 주로 space-evenly로 설정하였는데요,
+       사용자의 브라우저에 따라 달라지는 설정이 과연 좋은 코드인지를 고민해봐야할 것 같습니다. */
     justify-content: space-evenly;
 
     flex-basis: 75%;
 }
-/*  */
+/* feed layout 구성 : story, photo */
+/* story, photo column 방향으로 정렬 */
+/* flex-basis -> 부모(main layout)의 width(row 방향)을
+feed: 60%, account: 30% */
 .feed-container {
     display: flex;
     flex-direction: column;
@@ -80,6 +111,8 @@ body {
 
     flex-basis: 60%;
 }
+/* account layout 구성 : myaccount, recommand, terms */
+/* myaccount, recommand, terms column 방향으로 정렬 */
 .account-container {
     height: 90%;
 
@@ -91,7 +124,10 @@ body {
     flex-basis: 30%;
 }
 
-/*  */
+/* story containter 구성 : img 태그들 (class= photo story) */
+/* 'photo story' row 방향으로 정렬 */
+/* flex-basis -> 부모(feed layout)의 height(column 방향)을
+story: 12%, photo: 84% */
 .story-container {
     background-color: beige;
 
@@ -102,6 +138,8 @@ body {
     
     flex-basis: 12%;
 }
+/* story containter 구성 : img 태그들 (class= photo feed), p 태그들 (댓글) */
+/* 'photo feed', p column 방향으로 정렬 */
 .photo-container {
     background-color:grey;
     display: flex;
@@ -122,16 +160,21 @@ body {
     height: 300px;
 }
 
-/*  */
+/* flex-basis -> 부모(account layout)의 height(column 방향)을
+myaccount: 18%, recommand: 54%, terms: 18% */
+/* myaccount및 recommand의 구성 : div 태그들 (class=friend) */
+/* 'friend' column 방향으로 정렬 */
 .myaccount-container {
     background-color: beige;
     
     display: flex;
+    /* 사실 42번 줄 코드에 따르면 Default로 설명하는게 좀 더 일관성 있는 거 같습니다. */
     flex-direction: column;
     justify-content: space-evenly;
 
     flex-basis: 18%;
 }
+/* 'friend' column 방향으로 정렬 */
 .recommand-container {
     background-color: lightgray;
 
@@ -146,11 +189,22 @@ body {
 
     flex-basis: 18%;
 }
+
+/* 'friend'의 구성 : p 태그들 (class = nickname, follow) */
+/* 'nickname', 'follow' row방향 정렬 */
 .friend {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+/* 'nickname'의 구성 : text */
+/* Session 학습 : p, div와 같은 최말단 태그로 글씨를 작성시
+   글씨 역시 p, div 태그의 자식 요소이다.
+   -> 글씨 flex 적용 가능
+*/
+/* flex-basis -> 부모('friend')의 width(row 방향)을
+'nickname': 60%, 'follow': 20% */
 .nickname{
     display: flex;
     flex-direction: row;
