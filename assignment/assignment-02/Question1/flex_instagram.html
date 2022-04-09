@@ -10,31 +10,56 @@
 </head>
 <body>
 
-    
+    <!-- 전체 Main Layout -->
     <div class="layout-container">
-
+        
+        <!-- HTML 최상단 navigation Layout -->
+        <!-- 구성 : logo   search     icon-->
+        <!-- flex-direction : row -->
         <div class="navbar-container">
 
+            <!-- logo Layout -->
+            <!-- href로 main logo 클릭 시 main(flex_instagram.html)으로 이동 -->
+            <!-- 으로 작성하면 좋았을 것 같습니다. 하하 -->
             <div class="logo-container">
                 <img class="icon" src="https://user-images.githubusercontent.com/12531340/160886991-19938648-a5e4-470a-8e45-97fb59de8e7d.png">
             </div>
+            
+            <!-- search Layout -->
+            <!-- 3주차 세션에서 배운 input 태그를 이용하여 사용자의 입력을 받을 수 있으먼 좋을 것 같습니다. 하하 -->
             <div class="search-container">
                 검색
             </div>
+            
+            <!-- icon Layout -->
+            <!-- nav바 우측에 여러가지 기능을 누를 수 있는 아이콘을 배치하였습니다. -->
+            <!-- CSS상 flex-direction을 row-reverse 속성을 주었읍니다. -->
+            <!-- 위에서 아래 순서의 img 태그가 icon layout 우측으로부터 배치됩니다.-->
             <div class="icon-container">
-                <img class="icon" src="https://user-images.githubusercontent.com/12531340/160885198-079c5b12-96b2-4d1f-8100-9b9a76ad85f5.png">
+                <!-- heart -->
+                <img class="icon" src="https://user-images.githubusercontent.com/12531340/160885198-079c5b12-96b2-4d1f-8100-9b9a76ad85f5.png"> 
+                <!-- compass -->
                 <img class="icon" src="https://user-images.githubusercontent.com/12531340/160885412-e063979e-5da2-4cb0-b556-4c84a144437e.png">
+                <!-- plus -->
                 <img class="icon" src="https://user-images.githubusercontent.com/12531340/160886392-8a67be25-874c-4075-93ff-b339cca969b2.png">
+                <!-- direction -->
                 <img class="icon" src="https://user-images.githubusercontent.com/12531340/160886537-9a9960c7-b98a-4713-9410-9ab030e73334.png">
+                <!-- home -->
                 <img class="icon" src="https://user-images.githubusercontent.com/12531340/160886689-3b5becda-73e1-4c0f-bd83-5a7e19c658fb.png">
             </div>
 
         </div>
 
-        
+        <!-- navigation layout <-> contents layout -->
+        <!-- 구성 : 게시물(story, photo), 계정 정보(account, recommand, terms) -->
         <div class="contents-container">
 
+            <!-- feed layout -->
+            <!-- flex-direction : column -->
             <div class="feed-container">
+                
+                <!-- story layout -->
+                <!-- flex-direction : row -->
                 <div class="story-container">
                     <img class="photo story" src="https://user-images.githubusercontent.com/12531340/160890963-c9a1c939-f310-46f6-bd52-ef35eb40a778.jpeg">
                     <img class="photo story" src="https://user-images.githubusercontent.com/12531340/160891482-6e3795f7-ac47-4418-bf3a-f5f83ecb1f14.jpeg">
@@ -46,6 +71,9 @@
                     <img class="photo story" src="https://user-images.githubusercontent.com/12531340/160892679-21bc7fe0-7b80-4fef-9935-8e2ad3303a06.jpeg">
 
                 </div>
+                
+                <!-- photo layout -->
+                <!-- flex-direction : column -->
                 <div class="photo-container">
                     <img class="photo feed" src="https://user-images.githubusercontent.com/12531340/160889245-37153fee-66ef-4c8e-8183-26f6e1068603.jpeg">
                     <p>댓글1 : 우와 고양이 귀여워요~ 따봉</p>
@@ -54,14 +82,27 @@
                 </div>
             </div>
 
+            <!-- account Layout -->
+            <!-- 구성 : 내 계정(myaccount), 추천 계정(recommand), 이용약관(terms) -->
+            <!-- flex-direction : column -->
+            <!-- myaccount와 reccomand의 계정 정보를 담고있는 태그 div를 'friend'로 클래스 지정하였습니다 -->
+            <!-- 'friend'의 flex-direction : row -->
             <div class="account-container">
+                
+                <!-- flex-direction : column -->
                 <div class="myaccount-container">
+                    
+                    <!-- flex-direction : row -->
                     <div class="friend">
                         <p class="nickname">고양이 좋아</p>
                         <p class="follow">팔로우</p>
                     </div>
                 </div>
+                
+                <!-- flex-direction : column -->
                 <div class="recommand-container">
+                    
+                    <!-- flex-direction : row -->
                     <div class="friend">
                         <p class="nickname">4조~~!</p>
                         <p class="follow">팔로우</p>
@@ -78,7 +119,10 @@
                         <p class="nickname">응원해^^</p>
                         <p class="follow">팔로우</p>
                     </div>
+                    
                 </div>
+                
+                <!-- flex-direction : row(default) -->
                 <div class="terms-container">
                     <p>이용 약관</p>
                     <p>솰라솰라블라블라어쩌구저쩌구이랬다저랬다</p>
