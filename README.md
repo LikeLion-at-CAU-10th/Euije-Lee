@@ -5,3 +5,7 @@
 <img width="800" alt="hello-10th" src="https://user-images.githubusercontent.com/39653584/159526821-f5372309-ee3d-46bc-8d46-8a17ea582c56.png">
 
 </div>
+
+<div>
+음하하 나도 Git 쓰는 개발자~
+</div>
