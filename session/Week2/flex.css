@@ -1,0 +1,77 @@
+body {
+    background-color: white;
+    margin: 200px;
+}
+
+.layout-container {
+    /* Container에 Flex를 먹인다 */
+    display: flex;
+    /* Container의 Content의 정렬 방향을 Row로 할껀지, Col로 할껀지 */
+    /* 꼬치 꼬치 꼬치는 맛있다 */
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 800px;
+    height: 600px;
+    background-color: black;
+}
+
+.layout-title {
+    /* justify-content는 부모 Container에게 입력하는 속성임.(!중요!). */
+    /* display는 부모 Container에게 입력하는 속성임.(!중요!). */
+    justify-content: center;
+    display: flex;
+
+    /* 부모의 속성을 item들이 얼마만큼 가져갈 것인지 정한다 */
+    /* flex-basis (item만 사용) */
+    flex-basis: 13%;
+}
+.title {
+    background-color: red;
+    width: 97%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.layout-recent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 28%;
+}
+.recent {
+    background-color: yellow;
+    width: 23%;
+
+    /* 이곳에 flex-basis를 주지 않은 이유? */
+    /* Default 값이 1대1대1대1 */
+
+    /* div태그의 글씨도 Div 태그에 대한 자식태그임.*/
+    /* 1. 'recent'를 flex하게 만듦 */
+    /* 2. justify-content, align-items 활용 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-popular {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 53%;
+}
+.popular {
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular1 {
+    flex-basis: 72%;
+}
+.popular2 {
+    flex-basis: 22%;
+}

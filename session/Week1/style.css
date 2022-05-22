@@ -1,0 +1,40 @@
+nav {
+    background-color: purple;
+    color: #4D4D4D;
+    display: fixed;
+}
+
+
+
+/* HTML 문서 내 Navbar가 여러 개 있을 수 있다.
+-> nav ul로 <nav>안에 <ul>로 CSS 지정하여 입힐 수 있다. */
+nav ul {
+    list-style-type: none;
+    width: 800px;
+    height: 50px;
+
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+/* id에 적용 -> #(id) */
+#name {
+    color: blue;
+}
+
+/* class에 적용 -> .(class) */
+.introduce_text {
+    color: blue;
+}
+
+#name:hover {
+    color: black;
+}
+
+
+/* content -> padding -> border -> margin */
+/* padding 0 0 0 0 (상 하 좌 우) */
+/* *****퀴즈나옴***** */

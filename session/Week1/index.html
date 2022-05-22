@@ -1,0 +1,103 @@
+<!-- HTML 문서를 처음만들고 ! + 탭을 입력하면 기본 구조가 자동으로 입력된다. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <!-- 문서에 대한 정보 = head -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의제의 자기소개 페이지</title>
+
+    <style>
+        /*
+        &CSS 사용 방법 3가지&
+        1.
+        Header의 style태그로 CSS를 입힐 수 있다.
+        CSS의 전체선택자.
+        2.
+        태그의 style= 로 줄 수 있다.
+        3.
+        CSS 파일을 만들어 적용할 수 있다.
+        */
+
+        /* 
+        nav {
+            background-color: coral;
+        }
+        section {
+            background-color: aquamarine;
+        } */
+
+        /* 
+        단점
+        1. 가독성이 떨어짐
+        2. 코드가 길어질 시 수정하기 어려움.
+         */
+    </style>
+
+
+    <link rel='stylesheet' href="style.css">
+</head>
+
+<body>
+    <!-- 여기는 navbar를 나타내는 부분입니다. ^o^b -->
+    <header>
+        <nav>
+            <!-- 'ul>li*숫자' -> 탭 -->
+            <!-- href = hyper link reference -->
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="aboutme.html"> About me </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div>
+            <img src="na.png" width="100px" height="100px"></img>
+        </div>
+    </section>
+
+    <section>
+        <a href="https://www.instagram.com/agenda511">
+            <img src="instagram.png" width="100px" height="100px"/>
+        </a>
+    </section>
+
+    <section>
+        <h2> 제목 : 자기소개 </h2>
+
+        <!-- id는 하나만 됨. id의 CSS 적용 우선순위 높음 -->
+        <p id="name"> 이름 : 이의제 </p>
+        <p> 전공 : 소프트웨어 </p>
+
+        <!-- span과 div는 css상 자리를 잡는 방식이 다르다. -->
+        <!-- class는 여러개 ㅎㅎ -->
+        <p class="introduce_text"> test </p>
+        <p class="introduce_text"> 나이 : <span style="color:purple">23세.... </span></p>
+
+        <!-- 재미요소를 위한 -->
+        <!-- low=밑바닥 high=천장 optimum=적정값 -->
+        <!-- 똑같은 코드 복사 
+            Mac: key = option + shift + 아래키 
+            Window: key = alt + shift + 아래키 -->
+        <meter min="0" max="100" value="10" low="20" high="80" optimum="50"></meter>
+        <meter min="0" max="100" value="90" low="20" high="80" optimum="50"></meter>
+        <meter min="0" max="100" value="50" low="20" high="80" optimum="50"></meter>
+    </section>
+
+    
+
+    <!-- Sementic Element는 이것 말고도 많으니 참고! -->
+    <!-- https://velog.io/@rain98/TIL-%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%83%9C%EA%B7%B8 -->
+<footer>
+    ($^o^%) Copyright &copy;
+</footer>
+
+
+
+</body>
+
+</html>
