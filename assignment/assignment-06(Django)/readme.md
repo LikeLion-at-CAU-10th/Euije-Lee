@@ -1,4 +1,4 @@
-# <a href="../docs/1.BasicConcept.md">1. Basic Concept</a>
+# <a href="docs/1.BasicConcept.md">1. Basic Concept</a>
 
 # <a href="/docs/2.DjangoFramework.md">2. Django Framework </a>
 
