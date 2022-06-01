@@ -1,0 +1,39 @@
+// mediaquery 사용
+
+@import './variable.scss';
+
+@mixin respond-to($media) {
+    @if $media == mobile {
+        @media only screen and (max-width: $tabletSize) {
+            @content; // CSS 추후 설정
+        }
+    }
+
+    @else if $media == tablet {
+        @media only screen and (min-width: $tabletSize) and (max-width: $pcSize) {
+            @content;
+        }
+    }
+
+    @else if $media == pc {
+        @media only screen and (min-width: $pcSize) {
+            @content;
+        }
+    }
+}
+
+.font {
+    @include respond-to(mobile) {
+        font-size: 45px;
+        background-color: red;
+    }
+    @include respond-to(tablet) {
+        font-size: 60px;
+        background-color: orange;
+    }
+    @include respond-to(pc) {
+        font-size: 80px;
+        background-color: pink;
+    }
+}
+
