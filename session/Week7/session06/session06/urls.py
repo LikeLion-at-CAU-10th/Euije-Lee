@@ -18,10 +18,15 @@ from django.urls import path
 
 from django.conf.urls import include
 
+from views import json_response, http_response
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-
+    
     path('footprint/', include('footprint.urls')),
+
+    path('/', http_response, name='http_response'),
+    path('json/', json_response, name='json_response'),
 ]
 
 # 사용자 path입력이 들어오면 어디로 안내해줄지를 당담하는 파일
