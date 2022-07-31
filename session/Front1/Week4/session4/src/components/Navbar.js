@@ -18,7 +18,10 @@ const Button = styled.div`
 
 const ButtonDom = styled.div`
   display: flex;
-  flex-direnction: column;
+  flex-direction: column;
+
+  margin-top: 100%;
+  margin-right: 2%;
 `;
 
 const Navbar = () => {

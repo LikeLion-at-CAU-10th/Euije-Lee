@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Love from "./pages/Love";
 import AboutWhom from "./components/AboutWhom";
+import Search from "./components/Search";
 
 const AppDom = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ function App() {
           <Route path="/love" element={<Love />}></Route>
         </Routes>
       </AppDom>
+      <Search/>
     </>
   );
 }

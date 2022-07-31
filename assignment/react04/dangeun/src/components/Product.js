@@ -16,14 +16,14 @@ const ContentContainer = styled.div`
 const Product = (props) => {
   return (
     <> 
-        <img src={props.data.img} alt="no img"></img>
+        <img src={props.data.preview.img} alt="no img"></img>
 
         <MainContainer>
 
             <ContentContainer>
-                <p><b>{props.data.title}</b></p>
-                <p className="address">{props.data.address}</p>
-                <p className="price">{props.data.price}</p>
+                <p><b>{props.data.preview.title}</b></p>
+                <p className="address">{props.data.preview.address}</p>
+                <p className="price">{props.data.preview.price}</p>
             </ContentContainer>
 
             <Like />

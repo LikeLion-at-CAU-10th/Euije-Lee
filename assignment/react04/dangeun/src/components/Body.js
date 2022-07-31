@@ -39,12 +39,13 @@ const Body = () => {
           <img
             style={{ width: "50px", height: "50px", marginRight: "10px" }}
             src="img/dangeun.jpeg"
+            alt="no img"
           />
           <input
             style={{ width: "500px", height: "50px" }}
             type="text"
             placeholder="찾으실 물건을 입력하세요"
-            onInput={(e) => {
+            onChange={(e) => {
               setInput(e.target.value);
             }}
           />
