@@ -48,7 +48,7 @@ const Box = () => {
     };
 
     fetchData();
-  }, [curIdx, data]);
+  }, [curIdx]);
   // # dependency에 curIdx를 넣은이유
   // 클릭 시에 서버에서 데이터 변경 시, 이를 반영해주기 위해
   // 당근 마켓에 상품 업로드 / 삭제 시, 바로 반영
