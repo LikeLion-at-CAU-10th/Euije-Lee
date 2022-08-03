@@ -30,7 +30,8 @@ const Page = () => {
       key: 'woh1g0ki'
     }
   */
-  //
+  // search -> query string
+  // useSearchParams() Hook 사용
   const product = locate.state;
 
   // const curIdx1 = useParams().page;
